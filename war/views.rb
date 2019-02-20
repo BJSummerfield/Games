@@ -12,3 +12,13 @@ def war?
   puts "Player 2's War Card: #{@war2.last}"
 end
 
+def win1
+  puts "Player 1 Wins"
+  exit
+end
+
+def win2
+  puts "Player 2 Wins"
+  exit
+end
+

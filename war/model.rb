@@ -30,12 +30,24 @@ end
     @war1 = []
     @war2 = []
       @war1<<@p1.shift
+        if nil
+          win2
+        end
       @war2<<@p2.shift
+        if nil
+          win1
+        end
     complete = true
     while complete == true
       2.times do
         @war1<<@p1.shift
+          if nil
+            win2
+          end
         @war2<<@p2.shift
+          if nil
+            win1
+          end
       end
       war?
       checkwin
@@ -56,13 +68,24 @@ end
 
 def checkwin
   if @p1.empty?
-    puts "Player 2 Wins"
-    exit
+    win2
   elsif @p2.empty?
-    puts "Player 1 Wins"
-    exit
+    win1
   end
 end
+
+  
+
+
+# def checkwin
+  # if @p1.empty?
+    # puts "Player 2 Wins"
+    # exit
+  # elsif @p2.empty?
+    # puts "Player 1 Wins"
+    # exit
+  # end
+# end
 
 deck
 shuffle(@deck)
