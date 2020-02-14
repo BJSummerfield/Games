@@ -74,19 +74,4 @@ def checkwin
   end
 end
 
-  
 
-
-# def checkwin
-  # if @p1.empty?
-    # puts "Player 2 Wins"
-    # exit
-  # elsif @p2.empty?
-    # puts "Player 1 Wins"
-    # exit
-  # end
-# end
-
-deck
-shuffle(@deck)
-deal(@deck)
